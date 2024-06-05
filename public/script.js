@@ -48,6 +48,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     });
 
     if (!response.ok) {
+      alert("username or password wrong, register now if you don't have an account");
       throw new Error('Login failed');
     }
 
